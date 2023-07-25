@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+header {
+  background-color: #252525;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 12vh;
+}
+header section img {
+  height: 40px;
+  width: 40px;
+}
+a:hover img {
+  transform: scale(1.2);
+}
+header section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 10vw;
+}
+header p {
+  color: white;
+  font-family: "Roboto Serif", serif;
+}
+header nav {
+  width: 18vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/*todas as h2 estão com um padrão de tamanho e de fonte*/
+h2 {
+  font-size: 70px;
+  font-family: "Roboto Serif", serif;
+}
+.Sessao1 h2 {
+  color: white;
+}
+.Sessao1 img {
+  position: relative;
+  top: 60px;
+}
+.Sessao1 {
+  height: 140vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 110px;
+  background-image: url("./img/Grupo 486.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+main section img {
+  height: 110px;
+  width: 110px;
+}
+.Sessao2 {
+  height: 140vh;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 60px;
+  background-image: url("./img/Interseção 16.png");
+  background-size: 100% 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+.Sessao2 h2,
+p {
+  color: #3a342f;
+}
+main section p {
+  font-size: 30px;
+  font-weight: 500;
+}
+main h2 {
+  padding-bottom: 22px;
+}
+/* Responsavél pelos dois botões contidos na main*/
+main section a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 22px 55px;
+  border-radius: 40px;
+  border: 2px solid transparent;
+  width: 280px;
+  height: 80px;
+  position: relative;
+  top: 30px;
+}
+main section a:hover {
+  transform: scale(1.2);
+}
+.Sessao2 a {
+  background: #3a342f;
+  color: white;
+}
+/*sessão3 feita somente com display:flex*/
+.CoverDaSessao3 {
+  height: 140vh;
+  background-image: url("./img/Grupo 480.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.Sessao3 {
+  height: 100vh;
+  width: 90vh;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+}
+
+.Sessao3 h2 {
+  color: white;
+  width: 30vw;
+}
+.Sessao3 p {
+  color: white;
+  width: 40vw;
+}
+.Sessao3 a {
+  background: white;
+  color: black;
+}
+.Patrocinios {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 20vh;
+}
+.Patrocinios h3 {
+  font-size: 40px;
+  color: #fd6a9a;
+}
+.Havaianas {
+  font-weight: 700;
+}
+.americanas {
+  font-weight: 500;
+}
+.FantastikaIcon2 {
+  display: none;
+}
+.FantastikaIcon2 p {
+  color: white;
+  font-family: "Roboto Serif", serif;
+  font-weight: 600;
+}
+.RedesSociais2 {
+  display: none;
+}
+footer {
+  background-color: #eb4a7b;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 40vh;
+}
+footer h3 {
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+  padding-bottom: 20px;
+  font-family: "Roboto Serif", serif;
+}
+footer ul {
+  list-style: none;
+  font-size: 20px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer li:hover {
+  transform: scale(1.2);
+}
+/*Medidas para smartphones*/
+@media (max-width: 500px) {
+  .FantastikaIcon1 {
+    width: 30vw;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .Instagram,
+  .Youtube {
+    display: none;
+  }
+  .Sessao1 h2 {
+    font-size: 38px;
+  }
+  .Patinha1 {
+    z-index: 2;
+  }
+  .Sessao2 {
+    display: flex;
+    justify-content: flex-start;
+    background-image: url("./img/Grupo 484M.png");
+    background-size: 100% 100%;
+  }
+  .Sessao2 h2 {
+    font-size: 30px;
+    padding-top: 60px;
+  }
+  .Sessao2 p {
+    font-size: 16px;
+  }
+  main section a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 18px;
+    width: 140px;
+    height: 40px;
+  }
+  .CoverDaSessao3 {
+    background-image: url("./img/Grupo 496M.png");
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .Sessao3 {
+    margin: 60px;
+    height: 38vh;
+    width: 50vw;
+  }
+  .Sessao3 h2 {
+    font-size: 30px;
+    width: 70vw;
+  }
+  .Sessao3 p {
+    font-size: 16px;
+    width: 70vw;
+  }
+  .Patrocinios {
+    display: flex;
+    justify-content: space-around;
+  }
+  .Patrocinios p {
+    position: relative;
+    left: 210px;
+    bottom: 26px;
+    font-size: 20px;
+  }
+  .Patrocinios h3 {
+    font-size: 30px;
+  }
+  .americanas {
+    margin-right: 80px;
+  }
+  .Havaianas {
+    padding-right: 18px;
+  }
+  .FantastikaIcon2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70vw;
+  }
+  .PatinhaFooter {
+    height: 94px;
+    width: 94px;
+  }
+  .FantastikaIcon2 p {
+    font-size: 40px;
+  }
+  footer nav img {
+    height: 40px;
+    width: 40px;
+  }
+  .RedesSociais2 {
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer {
+    height: 140vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  @media (max-width: 412px) {
+    .Sessao1 h2 {
+      font-size: 28px;
+    }
+    .Sessao1 {
+      height: 100vh;
+    }
+    .Sessao2 {
+      height: 100vh;
+    }
+    .CoverDaSessao3 {
+      height: 100vh;
+    }
+    .PatinhaFooter {
+      height: 70px;
+      width: 70px;
+    }
+    .FantastikaIcon2 p {
+      font-size: 34px;
+    }
+  }
+}
