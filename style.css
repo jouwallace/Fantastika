@@ -258,19 +258,17 @@ footer li:hover {
     justify-content: space-around;
   }
   .Patrocinios p {
-    position: relative;
-    left: 210px;
-    bottom: 26px;
-    font-size: 20px;
+    order: 2;
+    padding-bottom: 60px;
   }
   .Patrocinios h3 {
     font-size: 30px;
   }
   .americanas {
-    margin-right: 80px;
+    order: 3;
   }
   .Havaianas {
-    padding-right: 18px;
+    order: 1;
   }
   .FantastikaIcon2 {
     display: flex;
@@ -315,6 +313,15 @@ footer li:hover {
     }
     .CoverDaSessao3 {
       height: 100vh;
+    }
+    .Patrocinios {
+      width: 100%;
+    }
+    .Patrocinios h3 {
+      font-size: 26px;
+    }
+    .Patrocinios p {
+      font-size: 20px;
     }
     .PatinhaFooter {
       height: 70px;
